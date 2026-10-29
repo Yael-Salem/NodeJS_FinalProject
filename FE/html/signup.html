@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2>Create account</h2>
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Username must contain letters only"
+      />
+
+      <label for="email">E-Mail:</label>
+      <input type="text" name="email" id="email" />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        placeholder="Must contain at least 1 number and no symbols"
+        minlength="3"
+        name="password"
+        id="password"
+      />
+
+      <label for="password">Confirm Password:</label>
+      <input type="password" name="confirmPassword" id="confirmPassword" />
+
+      <input type="button" value="Create account" class="formSubmitBtn" />
+
+      <h2>Already Have an accout?</h2>
+
+      <a href="./index.html" id="toSignup">Click here to log in</a>
+    </div>
+
+    <!--Modal to display if an error occured during the log in process-->
+    <div class="errorModal">
+      <div class="modalContent">
+        <h2>Error! invalid username or password</h2>
+        <p class="modalContent">Error! Invalid information entered</p>
+
+        <button class="closeModal">Ok</button>
+      </div>
+    </div>
+
+    <script src="../js/validation.js"></script>
+  </body>
+</html>

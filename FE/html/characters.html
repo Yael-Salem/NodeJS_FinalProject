@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Characters</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>List of characters</h1>
+      </header>
+
+      <nav>
+        <a href="../html/home.html">Home page</a>
+        <a href="../html/about.html">About the developer</a>
+      </nav>
+
+      <p>
+        Take a look at some of the characters and items you will meet during
+        your journey through S4 and S5
+      </p>
+      <ul class="charList"></ul>
+
+      <ul class="itemList"></ul>
+
+      <h2>Add your own character here</h2>
+
+      <label for="name">Name:</label>
+      <input type="text" name="charName" id="charName" />
+
+      <label for="strength">Strength (Number between 1 and 10)</label>
+      <input type="number" name="charStrength" id="charStrength" />
+
+      <label for="description">Description</label>
+      <textarea
+        placeholder="Enter description here"
+        name="charDescription"
+        id="charDescription"
+        rows="5"
+      ></textarea>
+
+      <input type="button" value="add" class="formSubmitBtn" />
+    </div>
+
+    <script src="../js/charList.js"></script>
+  </body>
+</html>

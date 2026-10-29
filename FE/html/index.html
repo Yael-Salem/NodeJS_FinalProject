@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Log in</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2>Log in</h2>
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="username" required /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" required />
+
+      <input type="button" value="Log in" class="formSubmitBtn" />
+
+      <h2>Don't have an account with us? <br /></h2>
+
+      <a href="./signup.html" id="toSignup">Create an account here!</a>
+    </div>
+
+    <!--Modal to display if an error occured during the log in process-->
+    <div class="errorModal">
+      <div class="modalContent">
+        
+      </div>
+    </div>
+
+    <script src="../js/verify.js"></script>
+  </body>
+</html>
